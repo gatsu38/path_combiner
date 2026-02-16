@@ -5,7 +5,7 @@ combine() {
   shift
   local file="$1"
 
-  while read -r line; do
+  while IFS= read -r line; do
     local new="$prefix$line"
     if [ $# -eq 1 ]; then
       echo "$new"
