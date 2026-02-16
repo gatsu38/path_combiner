@@ -1,3 +1,5 @@
+# takes a variable number of files and makes permutations based on every line give
+
 #!/bin/bash
 
 combine() {
