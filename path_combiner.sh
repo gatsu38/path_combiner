@@ -10,6 +10,7 @@ combine() {
   while IFS= read -r line; do
     local new="$prefix$line"
     if [ $# -eq 1 ]; then
+      echo "echo \"$new\""
       echo "$new"
     else
       combine "$new" "${@:2}"
